@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val tabTitles = arrayOf("Song", "Album", "Artist")
+        val tabTitles = arrayOf("Song", "Album", "Artist", "Album", "Artist", "Album", "Artist", "Album", "Artist", "Album")
         binding.vpMusic.adapter = MusicPagerAdapter(this)
         TabLayoutMediator(binding.tabMain, binding.vpMusic) { tab, position ->
             tab.text = tabTitles[position]
